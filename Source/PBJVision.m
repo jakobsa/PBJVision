@@ -1868,8 +1868,8 @@ typedef void (^PBJVisionBlock)();
         }
         
         [self _enqueueBlockOnMainQueue:^{                
-            if ([_delegate respondsToSelector:@selector(visionDidStartVideoCapture:)])
-                [_delegate visionDidStartVideoCapture:self];
+            if ([_delegate respondsToSelector:@selector(visionDidStartVideoCapture:atTime:)])
+                [_delegate visionDidStartVideoCapture:self atTime:_startTimestamp];
         }];
     }];
 }

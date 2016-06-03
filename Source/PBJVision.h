@@ -305,7 +305,7 @@ static CGFloat const PBJVideoBitRate1280x750 = 5000000 * 8;
 // video
 
 - (NSString *)vision:(PBJVision *)vision willStartVideoCaptureToFile:(NSString *)fileName;
-- (void)visionDidStartVideoCapture:(PBJVision *)vision;
+- (void)visionDidStartVideoCapture:(PBJVision *)vision atTime:(CMTime)time;
 - (void)visionDidPauseVideoCapture:(PBJVision *)vision; // stopped but not ended
 - (void)visionDidResumeVideoCapture:(PBJVision *)vision;
 - (void)visionDidEndVideoCapture:(PBJVision *)vision;
